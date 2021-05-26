@@ -18,6 +18,33 @@ Good summary <http://www.cs.toronto.edu/~hojjat/384w10/>
 
 Common "keywords" with example <http://www.cse.unsw.edu.au/~billw/dictionaries/prolog/>
 
+## Difference between `fact` and `rule`:
+
+A rule is a general statement about objects and their relationships.
+
+A rule is all facts that follow same pattern.
+
+Instead of 
+
+```prolog
+likes(wallace, gromit).
+likes(wallace, tom).
+....
+```
+one can imply wallace like everyone by
+```prolog
+likes(wallace,X) :- true.
+```
+Or `Wallace is friend to anyone who love cheese`
+
+```prolog
+friend(wallace,X) :- likes(X,cheese).
+```
+
+# TODO
++ prolog box model
++ list representation
+
 ## Bibliography
 
 By the main developer of SWI-prolog:

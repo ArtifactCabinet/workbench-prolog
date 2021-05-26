@@ -27,4 +27,12 @@ true.
 
 ?- halt.
 
+% _Variables_ begin with an uppercase letter or
+with an underscore ’ x’
+
+?- parent(WHO, edward).
+WHO = albert ;
+WHO = victoria.
+
+% type ; for continuos querying
 */
